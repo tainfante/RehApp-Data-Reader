@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="java">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/Downloads/jfxutils-1.0/jfxutils/src/main/java" />
+      <root url="file://$USER_HOME$/Downloads/jfxutils-1.0/jfxutils/src/test/java" />
+    </SOURCES>
+  </library>
+</component>

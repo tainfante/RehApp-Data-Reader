@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classes.MainCharts">
+
+    <center>
+        <TabPane focusTraversable="false" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+           <tabs>
+               <Tab text="Accelerometer and Gyroscope data">
+                  <content>
+                      <fx:include source="acc.fxml" />
+                  </content>
+               </Tab>
+               <Tab text="Electromyography data">
+                  <content>
+                      <fx:include source="emg.fxml" />
+                  </content>
+               </Tab>
+           </tabs>
+        </TabPane>
+    </center>
+
+    <top>
+        <VBox prefHeight="50.0" prefWidth="600.0">
+            <children>
+                <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Exit" />
+                                <MenuItem mnemonicParsing="false" text="" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Edit">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Delete" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="About" />
+                            </items>
+                        </Menu>
+                    </menus>
+
+                </MenuBar>
+            <Label fx:id="nameLabel" prefHeight="30.0" prefWidth="601.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Label>
+            </children>
+        </VBox>
+    </top>
+</BorderPane>
